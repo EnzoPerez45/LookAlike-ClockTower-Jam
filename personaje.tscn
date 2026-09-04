@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://byjm2np5jcget"]
+
+[ext_resource type="Script" uid="uid://rq8113g8syjc" path="res://personaje.gd" id="1_4e5bt"]
+[ext_resource type="PackedScene" uid="uid://dg0ulm7iqscov" path="res://personaje_jugable.tscn" id="2_yppqc"]
+[ext_resource type="PackedScene" uid="uid://dh17mie53qrxq" path="res://personaje_no_jugable.tscn" id="3_gj0cs"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvjx2"]
+
+[node name="Personaje" type="CharacterBody2D" unique_id=2105841329]
+script = ExtResource("1_4e5bt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1257884338]
+position = Vector2(593, 260)
+shape = SubResource("CapsuleShape2D_kvjx2")
+
+[node name="PersonajeJugable" parent="." unique_id=1468446643 instance=ExtResource("2_yppqc")]
+position = Vector2(402, 281)
+
+[node name="PersonajeNoJugable" parent="." unique_id=149929909 instance=ExtResource("3_gj0cs")]
+position = Vector2(465, 177)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=740808669]

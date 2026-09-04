@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://drlfv3wi8jldo"]
+
+[ext_resource type="PackedScene" uid="uid://c7yiqgbyke37p" path="res://interactuable.tscn" id="1_xlqxu"]
+[ext_resource type="Script" uid="uid://bs2cjhuwtnlvm" path="res://interactuable_tenebroso.gd" id="2_yesm4"]
+
+[node name="InteractuableTenebroso" unique_id=1407979690 instance=ExtResource("1_xlqxu")]
+script = ExtResource("2_yesm4")
+incremento_estres = 20.0

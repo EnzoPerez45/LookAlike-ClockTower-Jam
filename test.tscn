@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cdhdc4k1fgnnu"]
+
+[ext_resource type="PackedScene" uid="uid://dg0ulm7iqscov" path="res://personaje_jugable.tscn" id="2_g14j6"]
+[ext_resource type="PackedScene" uid="uid://c7yiqgbyke37p" path="res://interactuable.tscn" id="3_vbegm"]
+[ext_resource type="PackedScene" uid="uid://corod6eqaoqwh" path="res://objeto_interactuable.tscn" id="4_ehkex"]
+[ext_resource type="PackedScene" uid="uid://codx2hl63d6kn" path="res://game_manager.tscn" id="5_xersf"]
+
+[node name="Test" type="Node2D" unique_id=281285609]
+
+[node name="Interactuable" parent="." unique_id=1407979690 instance=ExtResource("3_vbegm")]
+
+[node name="ObjetoInteractuable" parent="." unique_id=959261794 instance=ExtResource("4_ehkex")]
+
+[node name="GameManager" parent="." unique_id=374374808 instance=ExtResource("5_xersf")]
+
+[node name="PersonajeJugable" parent="." unique_id=1468446643 instance=ExtResource("2_g14j6")]

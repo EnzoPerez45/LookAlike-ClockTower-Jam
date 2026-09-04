@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c7yiqgbyke37p"]
+
+[ext_resource type="Script" uid="uid://cb2ghrqqq807k" path="res://interactuable.gd" id="1_simnn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvjx2"]
+
+[node name="Interactuable" type="Area2D" unique_id=1407979690]
+script = ExtResource("1_simnn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1699050231]
+shape = SubResource("RectangleShape2D_kvjx2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=712425576]
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_shape_entered" from="." to="." method="_on_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="." to="." method="_on_mouse_shape_exited"]

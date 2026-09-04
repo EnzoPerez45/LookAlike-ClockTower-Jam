@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ck8sxqnr6lyne"]
+
+[ext_resource type="PackedScene" uid="uid://corod6eqaoqwh" path="res://objeto_interactuable.tscn" id="1_8gvf5"]
+[ext_resource type="Script" uid="uid://dy4t2rd6ykvd1" path="res://puerta.gd" id="2_1h0p7"]
+
+[node name="Puerta" unique_id=1407979690 instance=ExtResource("1_8gvf5")]
+script = ExtResource("2_1h0p7")

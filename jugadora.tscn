@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://2eyuuftt4r7h"]
+
+[ext_resource type="Texture2D" uid="uid://w8nof8731n76" path="res://icon.svg" id="1_rggax"]
+[ext_resource type="Script" uid="uid://bvw8wo7r3w8dg" path="res://jugadora.gd" id="1_w8320"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvjx2"]
+
+[node name="Jugadora" type="CharacterBody2D" unique_id=1474399504]
+script = ExtResource("1_w8320")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1551807985]
+texture = ExtResource("1_rggax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=943919990]
+shape = SubResource("CapsuleShape2D_kvjx2")
