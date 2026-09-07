@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dg0ulm7iqscov"]
 
 [ext_resource type="Script" uid="uid://d110yc6yg6exj" path="res://personaje_jugable.gd" id="1_gn4tk"]
-[ext_resource type="Texture2D" uid="uid://dape10sm4w7ee" path="res://aaa.png" id="2_62dhi"]
+[ext_resource type="Texture2D" uid="uid://w8nof8731n76" path="res://icon.svg" id="2_62dhi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ftpee"]
 

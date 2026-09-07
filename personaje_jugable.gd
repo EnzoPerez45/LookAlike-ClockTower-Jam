@@ -1,11 +1,15 @@
 class_name PersonajeJugable extends Personaje
 
+@onready var sprite: Sprite2D = $Sprite2D
 
 func _ready() -> void:
-		destino = global_position
+		pass
 		
-func _process(delta: float) -> void:
-	pass
+func _process(_delta: float) -> void:
+	if get_global_mouse_position().x > global_position.x:
+		sprite.flip_h = false  
+	else:
+		sprite.flip_h = true   
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
@@ -18,4 +22,5 @@ func caminar_hacia(punto: Vector2) -> void:
 	destino = punto
 	moviendo = true
 		
+
 	

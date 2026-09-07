@@ -15,8 +15,7 @@ func seleccionarItem(obj: ObjetoInteractuable, textura_cursor: Texture2D) -> voi
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-	
+	pass	
 func mostrarDialogo(mensaje : String) -> void:
 	print(mensaje)
 	
