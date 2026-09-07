@@ -10,7 +10,7 @@ func _ready() -> void:
 	acomodar()
 	
 func acomodar() -> void:
-	gameManager = GameManager.new()
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(_delta: float) -> void:
@@ -25,6 +25,7 @@ func esInteractuadoCon(objInteractuable: ObjetoInteractuable) -> void:
 func _on_mouse_shape_entered(shape_idx: int) -> void:
 	Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
 	 # Cambia el cursor a una manito
+	
 
 
 func _on_mouse_shape_exited(shape_idx: int) -> void:

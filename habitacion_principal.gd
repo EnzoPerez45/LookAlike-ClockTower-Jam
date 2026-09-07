@@ -28,9 +28,6 @@ func _unhandled_input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 			return
 		
-	
-
-
 
 func mostrar_mensaje(mensaje: String) -> void:
 	texto_label.text = mensaje
