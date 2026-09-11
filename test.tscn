@@ -16,3 +16,6 @@ script = ExtResource("1_ykrsh")
 [node name="GameManager" parent="." unique_id=374374808 instance=ExtResource("5_xersf")]
 
 [node name="Puerta" parent="GameManager" unique_id=1573503938 instance=ExtResource("5_g14j6")]
+
+[node name="Puerta2" parent="GameManager" unique_id=538448194 instance=ExtResource("5_g14j6")]
+puertaIda = "res://habitacion_principal.tscn"

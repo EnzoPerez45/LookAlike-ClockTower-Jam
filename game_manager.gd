@@ -9,8 +9,8 @@ var gameEvents: Dictionary
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	personaje = PERSONAJE_ESCENA.instantiate()
-	get_tree().current_scene.add_child(personaje)
+	#personaje = PERSONAJE_ESCENA.instantiate()
+	#get_tree().current_scene.add_child(personaje)
 	gameEvents = {"puerta1":true}
 	
 func cambiarEscena(escena: String) -> void:

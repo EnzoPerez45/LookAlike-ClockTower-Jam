@@ -5,3 +5,5 @@
 
 [node name="Puerta" unique_id=1407979690 instance=ExtResource("1_8gvf5")]
 script = ExtResource("2_1h0p7")
+puertaIda = "res://test.tscn"
+mensaje = "Esta cerrada"

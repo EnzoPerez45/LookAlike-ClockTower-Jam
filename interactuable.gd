@@ -17,7 +17,7 @@ func _process(_delta: float) -> void:
 	pass
 	
 func esInteractuado() -> void:
-	print("Test Interactuado")
+	print(mensaje)
 	
 func esInteractuadoCon(objInteractuable: ObjetoInteractuable) -> void:
 	print("No creo que esto vaya aquí...")

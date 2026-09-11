@@ -2,12 +2,15 @@
 
 [ext_resource type="Script" uid="uid://cnc75c8sbk6ja" path="res://habitacion_principal.gd" id="1_3bava"]
 [ext_resource type="PackedScene" uid="uid://2eyuuftt4r7h" path="res://jugadora.tscn" id="2_38v8s"]
+[ext_resource type="PackedScene" uid="uid://dg0ulm7iqscov" path="res://personaje_jugable.tscn" id="2_c8r6h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kvjx2"]
 size = Vector2(113, 168)
 
 [node name="HabitacionPrincipal" type="Node2D" unique_id=611802402]
 script = ExtResource("1_3bava")
+
+[node name="PersonajeJugable" parent="." unique_id=1468446643 instance=ExtResource("2_c8r6h")]
 
 [node name="PuertaInteractiva" type="Area2D" parent="." unique_id=1616718936]
 

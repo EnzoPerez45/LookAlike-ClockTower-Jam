@@ -1,10 +1,13 @@
 class_name PersonajeJugable extends Personaje
 
 @onready var sprite: Sprite2D = $Sprite2D
-const textura = preload("res://aaa.png")
+const textura = preload("res://Images/aaa.png")
+
 func _ready() -> void:
 	if sprite:
 		sprite.texture = textura
+	position = Vector2(140.0, 480.0)
+	
 		
 func _process(_delta: float) -> void:
 	if get_global_mouse_position().x > global_position.x:

@@ -2,7 +2,7 @@ extends ObjetoInteractuable
 class_name Puerta
 
 var estaAbierta: bool
-var puertaIda ="res://personaje_jugable.tscn"
+@export var puertaIda ="res://habitacion_principal.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,5 +23,5 @@ func esInteractuado() -> void:
 		#gameManager.cambiarEscenario()
 		queue_free()
 		return
-	print("Esta cerrada")
+	print(mensaje)
 	
