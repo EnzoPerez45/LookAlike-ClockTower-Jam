@@ -1,16 +1,54 @@
 [gd_scene format=3 uid="uid://dg0ulm7iqscov"]
 
 [ext_resource type="Script" uid="uid://d110yc6yg6exj" path="res://personaje_jugable.gd" id="1_gn4tk"]
-[ext_resource type="Texture2D" uid="uid://dape10sm4w7ee" path="res://Images/aaa.png" id="2_62dhi"]
+[ext_resource type="Texture2D" uid="uid://cjiwp7e42we3v" path="res://Images/main_character/walk_1_v1.png" id="2_xdxwd"]
+[ext_resource type="Texture2D" uid="uid://0ibt6atj62bx" path="res://Images/main_character/walk_2_v1.png" id="3_pxtux"]
+[ext_resource type="Texture2D" uid="uid://brtvj5ovdbswn" path="res://Images/main_character/walk_3_v1.png" id="4_dwsjq"]
+[ext_resource type="Texture2D" uid="uid://bvov3xcnj7ody" path="res://Images/main_character/walk_5_v1.png" id="5_eue44"]
+[ext_resource type="Texture2D" uid="uid://b2wnsaf60o5l3" path="res://Images/main_character/walk_4_v1.png" id="6_o3q47"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ftpee"]
+radius = 39.0
+height = 164.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvjx2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xdxwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pxtux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dwsjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eue44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o3q47")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xdxwd")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [node name="PersonajeJugable" type="CharacterBody2D" unique_id=1468446643]
 script = ExtResource("1_gn4tk")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=310990983]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_62dhi")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1582286211]
 shape = SubResource("CapsuleShape2D_ftpee")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=19848888]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_kvjx2")
+animation = &"idle"

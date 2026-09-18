@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://wfdy3qnvvg8f" path="res://Images/fondo_cellroom_variant2.jpg" id="2_01hwq"]
 [ext_resource type="PackedScene" uid="uid://ck8sxqnr6lyne" path="res://puerta.tscn" id="2_e32wi"]
 [ext_resource type="Texture2D" uid="uid://covnuc0d68hfa" path="res://Images/fondo_cellroom_variant3.jpg" id="3_vxnyp"]
+[ext_resource type="PackedScene" uid="uid://dg0ulm7iqscov" path="res://personaje_jugable.tscn" id="5_vxnyp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ftpee"]
 animations = [{
@@ -38,3 +39,5 @@ centered = false
 [node name="Puerta" parent="." unique_id=1407979690 instance=ExtResource("2_e32wi")]
 position = Vector2(1229, 336)
 puertaIda = "res://habitacion_principal.tscn"
+
+[node name="PersonajeJugable" parent="." unique_id=1468446643 instance=ExtResource("5_vxnyp")]
