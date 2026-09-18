@@ -11,7 +11,7 @@ var gameEvents: Dictionary
 func _ready() -> void:
 	#personaje = PERSONAJE_ESCENA.instantiate()
 	#get_tree().current_scene.add_child(personaje)
-	gameEvents = {"puerta1":true}
+	gameEvents = {"puerta1":false}
 	
 func cambiarEscena(escena: String) -> void:
 	if get_tree() != null:

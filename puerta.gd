@@ -1,14 +1,14 @@
 extends ObjetoInteractuable
 class_name Puerta
 
-var estaAbierta: bool
+@export var estaAbierta: bool
 @export var puertaIda ="res://habitacion_principal.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	acomodar()
-	estaAbierta = false
-	estaAbierta = GameManager.gameEvents.get("puerta1")
+	
+	#estaAbierta = GameManager.gameEvents.get("puerta1")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,7 +20,6 @@ func esInteractuado() -> void:
 	if estaAbierta:
 		print("irA...")
 		GameManager.cambiarEscena(puertaIda)
-		#gameManager.cambiarEscenario()
 		queue_free()
 		return
 	print(mensaje)
